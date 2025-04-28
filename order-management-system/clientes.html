@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro de Clientes - Sistema de Gerenciamento de Pedidos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-semibold text-gray-800">Cadastro de Clientes</h1>
+    <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center space-x-1">
+      <i class="fas fa-arrow-left"></i><span>Voltar</span>
+    </a>
+  </header>
+  <main class="flex-grow container mx-auto p-6 max-w-lg bg-white rounded shadow">
+    <form class="space-y-6">
+      <div>
+        <label for="clienteId" class="block text-gray-700 font-medium mb-1">ID do Cliente</label>
+        <input type="text" id="clienteId" name="clienteId" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+      <div>
+        <label for="nomeCompleto" class="block text-gray-700 font-medium mb-1">Nome Completo</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+      <div>
+        <label for="cpfCnpj" class="block text-gray-700 font-medium mb-1">CPF/CNPJ</label>
+        <input type="text" id="cpfCnpj" name="cpfCnpj" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+      <div>
+        <label for="telefone" class="block text-gray-700 font-medium mb-1">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+      <div>
+        <label for="email" class="block text-gray-700 font-medium mb-1">E-mail</label>
+        <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+      <div>
+        <label for="endereco" class="block text-gray-700 font-medium mb-1">Endereço</label>
+        <input type="text" id="endereco" name="endereco" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+      <div>
+        <label for="ufCliente" class="block text-gray-700 font-medium mb-1">UF</label>
+        <select id="ufCliente" name="ufCliente" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
+          <option value="" disabled selected>Selecione a UF</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <option value="MG">MG</option>
+          <option value="ES">ES</option>
+          <!-- More UFs can be added here -->
+        </select>
+      </div>
+      <div>
+        <label for="cidadeCliente" class="block text-gray-700 font-medium mb-1">Cidade</label>
+        <select id="cidadeCliente" name="cidadeCliente" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
+          <option value="" disabled selected>Selecione a Cidade</option>
+          <option value="Cidade1">Cidade 1</option>
+          <option value="Cidade2">Cidade 2</option>
+          <option value="Cidade3">Cidade 3</option>
+          <!-- More cities can be added here -->
+        </select>
+      </div>
+      <div>
+        <label for="cep" class="block text-gray-700 font-medium mb-1">CEP</label>
+        <input type="text" id="cep" name="cep" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+      <div class="flex justify-between">
+        <button type="button" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 flex items-center space-x-2">
+          <i class="fas fa-plus"></i><span>Novo</span>
+        </button>
+        <button type="button" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 flex items-center space-x-2">
+          <i class="fas fa-edit"></i><span>Editar</span>
+        </button>
+        <button type="button" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 flex items-center space-x-2">
+          <i class="fas fa-save"></i><span>Gravar</span>
+        </button>
+        <button type="button" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 flex items-center space-x-2">
+          <i class="fas fa-trash-alt"></i><span>Excluir</span>
+        </button>
+        <a href="index.html" class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 flex items-center space-x-2">
+          <i class="fas fa-sign-out-alt"></i><span>Sair</span>
+        </a>
+      </div>
+    </form>
+  </main>
+  <footer class="bg-white shadow p-4 text-center text-gray-500 text-sm">
+    &copy; 2024 Loja - Sistema de Gerenciamento de Pedidos
+  </footer>
+</body>
+</html>
