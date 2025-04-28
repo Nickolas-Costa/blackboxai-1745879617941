@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Principal - Sistema de Gerenciamento de Pedidos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-semibold text-gray-800">Menu Principal</h1>
+    <div>
+      <button class="text-gray-600 hover:text-gray-900 mr-4 flex items-center space-x-1">
+        <i class="fas fa-cog"></i><span>Configurações</span>
+      </button>
+      <button class="text-red-600 hover:text-red-800 flex items-center space-x-1">
+        <i class="fas fa-sign-out-alt"></i><span>Sair</span>
+      </button>
+    </div>
+  </header>
+  <main class="flex-grow container mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <a href="categorias.html" class="bg-white rounded shadow p-6 flex flex-col items-center hover:bg-blue-50 transition">
+      <i class="fas fa-list-alt text-4xl text-blue-600 mb-4"></i>
+      <span class="text-lg font-medium text-gray-700">Cadastro de Categorias</span>
+    </a>
+    <a href="ufs.html" class="bg-white rounded shadow p-6 flex flex-col items-center hover:bg-blue-50 transition">
+      <i class="fas fa-flag-usa text-4xl text-green-600 mb-4"></i>
+      <span class="text-lg font-medium text-gray-700">Cadastro de UF</span>
+    </a>
+    <a href="cidades.html" class="bg-white rounded shadow p-6 flex flex-col items-center hover:bg-blue-50 transition">
+      <i class="fas fa-city text-4xl text-yellow-600 mb-4"></i>
+      <span class="text-lg font-medium text-gray-700">Cadastro de Cidades</span>
+    </a>
+    <a href="produtos.html" class="bg-white rounded shadow p-6 flex flex-col items-center hover:bg-blue-50 transition">
+      <i class="fas fa-box-open text-4xl text-purple-600 mb-4"></i>
+      <span class="text-lg font-medium text-gray-700">Cadastro de Produtos</span>
+    </a>
+    <a href="clientes.html" class="bg-white rounded shadow p-6 flex flex-col items-center hover:bg-blue-50 transition">
+      <i class="fas fa-users text-4xl text-pink-600 mb-4"></i>
+      <span class="text-lg font-medium text-gray-700">Cadastro de Clientes</span>
+    </a>
+    <a href="pedidos.html" class="bg-white rounded shadow p-6 flex flex-col items-center hover:bg-blue-50 transition">
+      <i class="fas fa-shopping-cart text-4xl text-red-600 mb-4"></i>
+      <span class="text-lg font-medium text-gray-700">Pedidos</span>
+    </a>
+  </main>
+  <footer class="bg-white shadow p-4 text-center text-gray-500 text-sm">
+    &copy; 2024 Loja - Sistema de Gerenciamento de Pedidos
+  </footer>
+</body>
+</html>
